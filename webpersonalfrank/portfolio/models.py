@@ -1,13 +1,17 @@
 from django.db import models
 
-# Create your models here.
-'''
-Representa una tabla dentro de la base de datos. Cada clase representa una tabla. Se deberán
-de crear las columnas de la tabla. Cada columna será un atributo de la clase.
-'''
-class Project(models.Model): # Hereda de models.Model. El nombre SIEMPRE en singular.
+class Project(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
-    image = models.ImageField()
+    image = models.ImageField(upload_to="projects", verbose_name="Imagen")
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+    link = models.URLField(null=True, blank=True, verbose_name="Dirección Web")
+
+    class Meta:
+        verbose_name = "proyecto"
+        verbose_name_plural = "proyectos"
+        ordering = ["-created"]  # Ordenar por fecha de creación descendente
+
+    def __str__(self):
+        return self.title
