@@ -1,28 +1,26 @@
 {% extends 'core/base.html' %}
 
 {% load static %}
-{% block title %}Acerca de{% endblock %}
+{% block title %}origenes{% endblock %}
 
-{% block background %}{% static 'core/img/about-bg.jpg' %}{% endblock%}
+{% block background %}{% static 'core/img/about-me.png' %}{% endblock%}
 {% block headers %}
-    <h1>Acerca de</h1>
+    <h1>origenes</h1>
     <span class="subheading">Biografía</span>
 {% endblock %}
 
 {% block content %}
     <div class="row">
         <div class="col-lg-3 col-md-4 offset-lg-1">
-            <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+            <img class="img-fluid avatar" src="{% static 'core/img/avatar-me.jpeg' %}" alt="">
         </div>
         <div class="col-lg-7 col-md-8">
-            <h2 class="section-heading">Juan Pérez</h2>
+            <h2 class="section-heading">Frank Llonch</h2>
             <p>
-                Nacido en... lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur
-                voluptates odit, fuga atque ea nobis sit soluta odio.
+                Soy de Barcelona, nací en 2003 y he vivido aquí toda mi vida. Siempre he estado rodeado de la influencia de esta ciudad, que ha sido clave en mi interés por la tecnología y las ciencias. 
             </p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Saepe nostrum ullam eveniet pariatur voluptates odit...
+                Actualmente, me encuentro en desarrollo académico y profesional.
             </p>
         </div>
     </div>

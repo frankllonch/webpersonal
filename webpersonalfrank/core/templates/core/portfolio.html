@@ -1,12 +1,12 @@
 {% extends 'core/base.html' %}
 
 {% load static %}
-{% block title %}Portafolio{% endblock %}
+{% block title %}Trabajo{% endblock %}
 
-{% block background %}{% static 'core/img/portfolio-bg.jpg' %}{%endblock %}
+{% block background %}{% static 'core/img/portfolio-me.png' %}{%endblock %}
 
 {% block headers %}
-    <h1>Portafolio</h1>
+    <h1>Trabajo</h1>
     <span class="subheading">Currículo</span>
 {% endblock %}
 
@@ -14,35 +14,30 @@
     <!-- Proyecto -->
     <div class="row project">
         <div class="col-lg-3 col-md-4 offset-lg-1">
-            <img class="img-fluid" src="{% static 'core/img/about-bg.jpg' %}" alt="">
+            <img class="img-fluid" src="{% static 'core/img/whalfred-me.png' %}" alt="">
         </div>
         <div class="col-lg-7 col-md-8">
-            <h2 class="section-heading title">Segundo proyecto</h2>
+            <h2 class="section-heading title">Whalfred</h2>
             <p>
-                As we got further and further away, it [the Earth]
-                diminished in size. Finally it shrank to the size of a
-                marble,the most beautiful you can imagine. That beautiful,
-                warm....
+                Ayudando en un proyecto que se llama Whalfred. Utilizamos la API de WhatsApp para enviar recordatorios automáticos con un chat normal de WhatsApp.
             </p>
             <p>
-                <a href="http://google.com">Más información</a>
+                <a href="https://www.whalfred.com">Más información</a>
             </p>
         </div>
     </div>
     <!-- Proyecto -->
     <div class="row project">
         <div class="col-lg-3 col-md-4 offset-lg-1">
-            <img class="img-fluid" src="{% static 'core/img/home-bg.jpg' %}" alt="">
+            <img class="img-fluid" src="{% static 'core/img/uni-me.png' %}" alt="">
         </div>
         <div class="col-lg-7 col-md-8">
-            <h2 class="section-heading title">Primer proyecto</h2>
+            <h2 class="section-heading title">Universidad</h2>
             <p>
-                As we got further and further away, it [the Earth]
-                diminished in size. Finally it shrank to the size of a
-                marble, the most beautiful you can imagine. That beautiful,
-                warm....
+                “Estudio Ingeniería Matemática en la Universidad Alfonso X el Sabio. Este grado me permite combinar las matemáticas con su aplicación práctica en ingeniería, enfocándome en áreas como programación, análisis de datos y modelización matemática.”
+
             </p>
-            <p><a href="http://google.com">Más información</a></p>
+            <p><a href="https://www.uax.com">Más información</a></p>
         </div>
     </div>
 {% endblock %}
